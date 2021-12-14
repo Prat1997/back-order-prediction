@@ -8,7 +8,7 @@ import datetime
 import sklearn
 import numpy as np
 import logging
-import pymongo
+# import pymongo
 
 # configuring logging method
 logging.basicConfig(filename='info.txt',
