@@ -8,6 +8,7 @@ import datetime
 import sklearn
 import numpy as np
 import logging
+import os
 # import pymongo
 
 # configuring logging method
@@ -120,8 +121,8 @@ def predict():
         print(date)
         print(type(date))
 
-        ACCESS_KEY_ID = ''
-        ACCESS_SECRET_KEY = ''
+        ACCESS_KEY_ID = 'AKIA2U5J5V6SNVNOWFRL'
+        ACCESS_SECRET_KEY = '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'
 
         def put_data(a, b, c, d, e, f, g, h, i, j, k, l, m, dynamodb=None):
             if not dynamodb:
@@ -160,7 +161,27 @@ def predict():
         print("error in insertion")
 
     logging.info("successfully predicted")
+
+    try:
+        access_key='AKIA2U5J5V6SNVNOWFRL'
+        secret_access_key='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'
+        client = boto3.client('s3',
+                            aws_access_key_id = access_key,
+                            aws_secret_access_key = secret_access_key)
+
+        for file in os.listdir():
+            if 'info.txt' in file:
+                upload_file_bucket = 'back-order-732111417252'
+                upload_file_key = 'logfile/' + str(file)
+                client.upload_file(file, upload_file_bucket, upload_file_key, ExtraArgs={'ACL': 'public-read'})
+        
+    except Exception as e:
+        logging.warning("found error in sending files to s3 bucket")
+        print("error in s3 insertion")
+
+
     return render_template('result.html', predict=result, product_no=product_no)
+     
 
 
 if __name__ == "__main__":
