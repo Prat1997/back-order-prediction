@@ -21,6 +21,7 @@ logging.basicConfig(filename='info.txt',
 # Load the decision tree model
 model = pickle.load(open('Tuned_DT_Back_order.pkl', 'rb'))
 
+application = app 
 app = Flask(__name__)
 
 
