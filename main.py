@@ -21,33 +21,33 @@ logging.basicConfig(filename='info.txt',
 # Load the decision tree model
 model = pickle.load(open('Tuned_DT_Back_order.pkl', 'rb'))
 
-# application = app 
-app = Flask(__name__)
+
+application = Flask(__name__)
 
 
 # route for 404 error handler
-@app.errorhandler(404)
+@application.errorhandler(404)
 def page_not_found(error):
     logging.error("Page not found: %s", (request.path))
     return render_template('404.html', title='404 Error', msg=request.path)
 
 
 # route for 403 error handler
-@app.errorhandler(405)
+@application.errorhandler(405)
 def page_not_found(error):
     logging.error("Method is not allowed: %s", (request.path))
     return render_template('405.html', title='405 Error', msg=request.path)
 
 
 # route for 500 error handler
-@app.errorhandler(500)
+@application.errorhandler(500)
 def internal_server_error(error):
     logging.error('Server Error: %s' % error)
     return render_template('500.html', title='500 Error', msg=error)
 
 
 # route for main page
-@app.route('/')
+@application.route('/')
 def index():
     try:
         logging.info("someone is accessing index.html!!!")
@@ -58,7 +58,7 @@ def index():
 
 
 # route for prediction
-@app.route('/predict', methods=['POST'])
+@application.route('/predict', methods=['POST'])
 def predict():
     global collection, national_inv, Lead_time, Sales1month, piecespastdue, perf_6_month_avg, localboqty, deck_risk, oe_constraint, stopautobuy, ppap_risk, rev_stop3, result, client
     # global national_inv, Sales1month
@@ -110,62 +110,60 @@ def predict():
         logging.critical("Found Exception in route /predict: ")
         return render_template("new_error.html")
 
+    # try:
 
+# creating date time for inserting data
+    date_time = datetime.datetime.now()
+    time = date_time.strftime('%A %d-%m-%Y, %H:%M:%S')
+    date = (str(time))
+    print(date)
+    print(type(date))
 
+    ACCESS_KEY_ID = 'AKIA2U5J5V6SNJJ7WZTH'
+    ACCESS_SECRET_KEY = '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'
 
-#     try:
+    def put_data(a, b, c, d, e, f, g, h, i, j, k, l, m, dynamodb=None):
 
-    # creating date time for inserting data
-      date_time = datetime.datetime.now()
-      time = date_time.strftime('%A %d-%m-%Y, %H:%M:%S')
-      date = (str(time))
-      print(date)
-      print(type(date))
-
-      ACCESS_KEY_ID = 'AKIA2U5J5V6SNJJ7WZTH'
-      ACCESS_SECRET_KEY = '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'
-
-      def put_data(a, b, c, d, e, f, g, h, i, j, k, l, m, dynamodb=None):
-          if not dynamodb:
-              dynamodb = boto3.resource('dynamodb',
+        if not dynamodb:
+            dynamodb = boto3.resource('dynamodb',
                                         aws_access_key_id=ACCESS_KEY_ID,
                                         aws_secret_access_key=ACCESS_SECRET_KEY
                                         )
 
-          table = dynamodb.Table('user_data')
-          response = table.put_item(
-              Item={
-                  'national_inv': a,
-                  'Lead_time': b,
-                  'Sales1month': c,
-                  'piecespastdue': d,
-                  'perf_6_month_avg': e,
-                  'localboqty': f,
-                  'deck_risk': g,
-                  'oe_constraint': h,
-                  'stopautobuy': i,
-                  'ppap_risk': j,
-                  'rev_stop3': k,
-                  'date': l,
-                  'predict': m
-              }
-          )
-          return response
+        table = dynamodb.Table('user_data')
+        response = table.put_item(
+            Item={
+                'national_inv': a,
+                'Lead_time': b,
+                'Sales1month': c,
+                'piecespastdue': d,
+                'perf_6_month_avg': e,
+                'localboqty': f,
+                'deck_risk': g,
+                'oe_constraint': h,
+                'stopautobuy': i,
+                'ppap_risk': j,
+                'rev_stop3': k,
+                'date': l,
+                'predict': m
+            }
+        )
+        return response
 
-      put_data(national_inv, Lead_time, Sales1month, piecespastdue, perf_6_month_avg, localboqty, deck_risk,
-               oe_constraint, stopautobuy, ppap_risk, rev_stop3, date, result)
-      print("Put Item succeeded:")
-      logging.info("successfully inserted data into dynamo db")
+    put_data(national_inv, Lead_time, Sales1month, piecespastdue, perf_6_month_avg, localboqty, deck_risk,
+                oe_constraint, stopautobuy, ppap_risk, rev_stop3, date, result)
+    print("Put Item succeeded:")
+    logging.info("successfully inserted data into dynamo db")
 
-#     except Exception as e:
-#       logging.warning("found error in inserting data")
-#       print("error in insertion")
+    # except Exception as e:
+    #     logging.warning("found error in inserting data")
+    #     print("error in insertion")
 
     logging.info("successfully predicted")
 
     try:
         access_key='AKIA2U5J5V6SNJJ7WZTH'
-        secret_access_key='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
+        secret_access_key='/KqlTZz4BNbVEKzbe0B+mY7BvE1NEJRDxHRiOamd'
         client = boto3.client('s3',
                             aws_access_key_id = access_key,
                             aws_secret_access_key = secret_access_key)
@@ -186,4 +184,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(port=8008, debug=True)
+    application.run(port=8001, debug=True)
