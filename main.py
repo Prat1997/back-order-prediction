@@ -22,32 +22,32 @@ logging.basicConfig(filename='info.txt',
 model = pickle.load(open('Tuned_DT_Back_order.pkl', 'rb'))
 
 
-application = Flask(__name__)
+app = Flask(__name__)
 
 
 # route for 404 error handler
-@application.errorhandler(404)
+@app.errorhandler(404)
 def page_not_found(error):
     logging.error("Page not found: %s", (request.path))
     return render_template('404.html', title='404 Error', msg=request.path)
 
 
 # route for 403 error handler
-@application.errorhandler(405)
+@app.errorhandler(405)
 def page_not_found(error):
     logging.error("Method is not allowed: %s", (request.path))
     return render_template('405.html', title='405 Error', msg=request.path)
 
 
 # route for 500 error handler
-@application.errorhandler(500)
+@app.errorhandler(500)
 def internal_server_error(error):
     logging.error('Server Error: %s' % error)
     return render_template('500.html', title='500 Error', msg=error)
 
 
 # route for main page
-@application.route('/')
+@app.route('/')
 def index():
     try:
         logging.info("someone is accessing index.html!!!")
@@ -58,7 +58,7 @@ def index():
 
 
 # route for prediction
-@application.route('/predict', methods=['POST'])
+@app.route('/predict', methods=['POST'])
 def predict():
     global collection, national_inv, Lead_time, Sales1month, piecespastdue, perf_6_month_avg, localboqty, deck_risk, oe_constraint, stopautobuy, ppap_risk, rev_stop3, result, client
     # global national_inv, Sales1month
@@ -184,4 +184,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    application.run(port=8001, debug=True)
+    app.run(port=8001, debug=True)
