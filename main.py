@@ -119,14 +119,16 @@ def predict():
         print(date)
         print(type(date))
 
-        access_key='AKIA2U5J5V6SNJJ7WZTH'
-        secret_access_key='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'
+        ACCESS_KEY_ID='AKIAYMGFWY2EJULQUZGZ'
+        ACCESS_SECRET_KEY='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'
 
         def put_data(a, b, c, d, e, f, g, h, i, j, k, l, m, dynamodb=None):
             if not dynamodb:
                 dynamodb = boto3.resource('dynamodb',
-                                          aws_access_key_id = access_key,
-                            aws_secret_access_key = secret_access_key)
+                    aws_access_key_id=ACCESS_KEY_ID,
+                    aws_secret_access_key=ACCESS_SECRET_KEY,
+                    region_name='ap-south-1'
+                    )
 
             table = dynamodb.Table('user_data')
             response = table.put_item(
