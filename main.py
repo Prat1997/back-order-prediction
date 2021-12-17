@@ -119,7 +119,7 @@ def predict():
         print(date)
         print(type(date))
 
-         access_key='AKIA2U5J5V6SNJJ7WZTH'
+        access_key='AKIA2U5J5V6SNJJ7WZTH'
         secret_access_key='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'
 
         def put_data(a, b, c, d, e, f, g, h, i, j, k, l, m, dynamodb=None):
