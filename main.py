@@ -110,54 +110,53 @@ def predict():
         logging.critical("Found Exception in route /predict: ")
         return render_template("new_error.html")
 
-    # try:
+    try:
 
-# creating date time for inserting data
-    date_time = datetime.datetime.now()
-    time = date_time.strftime('%A %d-%m-%Y, %H:%M:%S')
-    date = (str(time))
-    print(date)
-    print(type(date))
+    # creating date time for inserting data
+        date_time = datetime.datetime.now()
+        time = date_time.strftime('%A %d-%m-%Y, %H:%M:%S')
+        date = (str(time))
+        print(date)
+        print(type(date))
 
-    ACCESS_KEY_ID = ''
-    ACCESS_SECRET_KEY = ''
+         access_key='AKIA2U5J5V6SNJJ7WZTH'
+        secret_access_key='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'
 
-    def put_data(a, b, c, d, e, f, g, h, i, j, k, l, m, dynamodb=None):
+        def put_data(a, b, c, d, e, f, g, h, i, j, k, l, m, dynamodb=None):
+            if not dynamodb:
+                dynamodb = boto3.resource('dynamodb',
+                                          aws_access_key_id = access_key,
+                            aws_secret_access_key = secret_access_key)
 
-        if not dynamodb:
-            dynamodb = boto3.resource('dynamodb',
-                                        aws_access_key_id=ACCESS_KEY_ID,
-                                        aws_secret_access_key=ACCESS_SECRET_KEY
-                                        )
+            table = dynamodb.Table('user_data')
+            response = table.put_item(
+                Item={
+                    'national_inv': a,
+                    'Lead_time': b,
+                    'Sales1month': c,
+                    'piecespastdue': d,
+                    'perf_6_month_avg': e,
+                    'localboqty': f,
+                    'deck_risk': g,
+                    'oe_constraint': h,
+                    'stopautobuy': i,
+                    'ppap_risk': j,
+                    'rev_stop3': k,
+                    'date': l,
+                    'predict': m
+                }
+            )
+            return response
 
-        table = dynamodb.Table('user_data')
-        response = table.put_item(
-            Item={
-                'national_inv': a,
-                'Lead_time': b,
-                'Sales1month': c,
-                'piecespastdue': d,
-                'perf_6_month_avg': e,
-                'localboqty': f,
-                'deck_risk': g,
-                'oe_constraint': h,
-                'stopautobuy': i,
-                'ppap_risk': j,
-                'rev_stop3': k,
-                'date': l,
-                'predict': m
-            }
-        )
-        return response
+        put_data(national_inv, Lead_time, Sales1month, piecespastdue, perf_6_month_avg, localboqty, deck_risk,
+                 oe_constraint, stopautobuy, ppap_risk, rev_stop3, date, result)
+        print("Put Item succeeded:")
+        logging.info("successfully inserted data into dynamo db")
 
-    put_data(national_inv, Lead_time, Sales1month, piecespastdue, perf_6_month_avg, localboqty, deck_risk,
-                oe_constraint, stopautobuy, ppap_risk, rev_stop3, date, result)
-    print("Put Item succeeded:")
-    logging.info("successfully inserted data into dynamo db")
-
-    # except Exception as e:
-    #     logging.warning("found error in inserting data")
-    #     print("error in insertion")
+    except Exception as e:
+        logging.warning("found error in inserting data")
+        print("error in insertion")
+        print(e)
 
     logging.info("successfully predicted")
 
