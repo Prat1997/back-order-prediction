@@ -9,6 +9,7 @@ import sklearn
 import numpy as np
 import logging
 import os
+import config
 # import pymongo
 
 # configuring logging method
@@ -119,8 +120,8 @@ def predict():
         print(date)
         print(type(date))
 
-        ACCESS_KEY_ID='AKIAYMGFWY2EJULQUZGZ'
-        ACCESS_SECRET_KEY='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'
+        access_key_id = config.ACCESS_KEY_ID
+        secret_access_key = config.ACCESS_SECRET_KEY
 
         def put_data(a, b, c, d, e, f, g, h, i, j, k, l, m, dynamodb=None):
             if not dynamodb:
