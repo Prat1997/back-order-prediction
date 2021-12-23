@@ -131,7 +131,7 @@ Our next step would be to follow the instruction given on
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
 
 [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) 
-[<img target="_blank" src="https://upload.wikimedia.org/wikipedia/commons/3/32/Mongo-db-logo.png" width=280>](https://account.mongodb.com/account/login?n=%2Fv2%2F613a4456b613903d19ff6a0d&nextHash=%23metrics%2FreplicaSet%2F613a452891e112710853bd33%2Fexplorer%2Fbike%2Fuser_details%2Ffind)
+[<img target="_blank" src="https://images.search.yahoo.com/search/images;_ylt=Awr9IkqmHMRhKkkABTlXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=dynamodb&fr2=piv-web&type=E211US826G0&fr=mcafee#id=3&iurl=https%3A%2F%2Flogodix.com%2Flogo%2F1799462.jpg&action=click" width=280>]()
 [<img target="_blank" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEHMPPej34qcJENKeCNdpqnZ5V9vLrmwVIvw&usqp=CAU" width=280>](https://aws.amazon.com/) 
 [<img target="_blank" src="https://seeklogo.com/images/B/bootstrap-logo-69A1CCC10B-seeklogo.com.png" width=200>](https://getbootstrap.com/) 
 
