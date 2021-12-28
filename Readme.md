@@ -69,18 +69,18 @@ Our next step would be to follow the instruction given on
 [Heroku Documentation](https://devcenter.heroku.com/articles/getting-started-with-python) to deploy a web app.
 
 ### AWS(Amazon Web Services)
-Login or signup with free tier in order to create virtual amchine(EC2 instance) for free. 
+Login or signup with free tier in order to create virtual amchine(Elastic beanstack) for free. 
 Note:- In free trier virtual Machine will only give free service for 720hr almost a month after that you will be charged , so use carefully. 
 I usally stop instance when it is not needed to avoid extra charge. so it may happen that deployment link for AWS might not work  
-[![](https://i.imgur.com/r9pJG6J.png)](https://heroku.com)
+[![](https://i.imgur.com/XMFtzYH.png) (https://i.imgur.com/cGvkZxw.png)](https://heroku.com)
 
 Our next step would be to follow the instruction given on 
-[AWS EC2 Instance Documentation](https://aws.amazon.com/getting-started/tutorials/deploy-code-vm/) to deploy a web app.
+[AWS Elastic Beanstack](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html) to deploy a web app.
 
 
 ## DataBase
 
-![App Screenshot](https://i.imgur.com/JMI7vmQ.png)
+![App Screenshot]()
 
 
 ## Directory Tree
@@ -131,7 +131,7 @@ Our next step would be to follow the instruction given on
 ![](https://forthebadge.com/images/badges/made-with-python.svg)
 
 [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) 
-[<img target="_blank" src="https://images.search.yahoo.com/search/images;_ylt=Awr9IkqmHMRhKkkABTlXNyoA;_ylu=Y29sbwNncTEEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=dynamodb&fr2=piv-web&type=E211US826G0&fr=mcafee#id=3&iurl=https%3A%2F%2Flogodix.com%2Flogo%2F1799462.jpg&action=click" width=280>]()
+[<img target="_blank" src="https://blog.vizuri.com/hs-fs/hub/342946/file-2231290146-png/Images/Logos/Partners/Amazon_Web_Services/aws_s3_logo.png" width=280>]()
 [<img target="_blank" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEHMPPej34qcJENKeCNdpqnZ5V9vLrmwVIvw&usqp=CAU" width=280>](https://aws.amazon.com/) 
 [<img target="_blank" src="https://seeklogo.com/images/B/bootstrap-logo-69A1CCC10B-seeklogo.com.png" width=200>](https://getbootstrap.com/) 
 
