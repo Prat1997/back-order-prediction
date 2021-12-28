@@ -82,8 +82,8 @@ Our next step would be to follow the instruction given on
 
 ## DataBase
 
-![App Screenshot](https://i.imgur.com/zYihnRR.jpg)(https://i.imgur.com/yWwLAWp.png)
-
+![App Screenshot](https://i.imgur.com/zYihnRR.jpg)
+![App Screenshot](https://i.imgur.com/yWwLAWp.png)
 
 ## Directory Tree
 
