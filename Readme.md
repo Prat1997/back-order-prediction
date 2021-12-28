@@ -31,10 +31,11 @@ then to identify the optimal strategy for inventorying products with high backor
 
 
 ## Demo ✔️
-Heroku:- 
+Heroku:- https://dashboard.heroku.com/apps/back-order-pred
 
 
-AWS(Ec2):- 
+AWS- Elastic Beanstalk:- 
+![elastic beanstalk](https://i.imgur.com/Wvai8ew.mp4)
 
   
 ## Overview 📜
@@ -115,15 +116,15 @@ Our next step would be to follow the instruction given on
   
 ## Documentation
 
-[Architecture](https://drive.google.com/file/d/1sp_UYlxHm4Y7CjXxX3dMEm6_S1iZLqOU/view?usp=sharing)
+[Architecture]()
 
-[Low Level Documentation](https://drive.google.com/file/d/11A5XLASni1cStVwmX1-vNNmEt4FjzM4E/view?usp=sharing)
+[Low Level Documentation]()
 
-[High Level Documentation](https://drive.google.com/file/d/1GWD1QqbAzpTVpna5WQvPCOXvAwkDTY74/view?usp=sharing)
+[High Level Documentation]()
 
-[Wired Framed Diagram](https://drive.google.com/file/d/10IJXCuvYf6klxRKUD4X6whd497E5UuYj/view?usp=sharing)
+[Wired Framed Diagram]()
 
-[DPR(Detail Documentation Report)](https://drive.google.com/file/d/1rHVn0pX20ktXifOkuCYvU3Z9G1dv7oVG/view?usp=sharing)
+[DPR(Detail Documentation Report)]()
 
 
 ## Technologies Used
@@ -132,7 +133,8 @@ Our next step would be to follow the instruction given on
 
 [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) 
 [<img target="_blank" src="https://blog.vizuri.com/hs-fs/hub/342946/file-2231290146-png/Images/Logos/Partners/Amazon_Web_Services/aws_s3_logo.png" width=280>]()
-[<img target="_blank" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEHMPPej34qcJENKeCNdpqnZ5V9vLrmwVIvw&usqp=CAU" width=280>](https://aws.amazon.com/) 
+[<img target="_blank" src="https://i.imgur.com/3mZlVf8.jpg" width=280>]()
+[<img target="_blank" src="" width=200>]()
 [<img target="_blank" src="https://seeklogo.com/images/B/bootstrap-logo-69A1CCC10B-seeklogo.com.png" width=200>](https://getbootstrap.com/) 
 
 
