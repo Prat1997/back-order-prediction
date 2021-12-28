@@ -149,7 +149,7 @@ kindly open an [issue](https://github.com/) here by including your search query 
 
 - [Priyam Trivedi](https://github.com/Priyam-Trivedi)
 - [Sravanthi Shoroff](https://github.com/sravanthishoroff)
-- [Prateek singh]
+- [Prateek singh](https://github.com/Prat1997)
 
 ## Future Scope
 
