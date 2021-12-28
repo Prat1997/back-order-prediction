@@ -36,7 +36,7 @@ Heroku:- https://dashboard.heroku.com/apps/back-order-pred
 
 AWS- Elastic Beanstalk:- http://backorder-env.eba-kr5v6w2h.us-east-1.elasticbeanstalk.com/
 
-![elastic beanstalk](https://i.imgur.com/VRg18nK.gif)
+![elastic beanstalk]()
 
   
 ## Overview 📜
