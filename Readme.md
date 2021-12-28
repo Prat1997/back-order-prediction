@@ -34,7 +34,7 @@ then to identify the optimal strategy for inventorying products with high backor
 Heroku:- https://dashboard.heroku.com/apps/back-order-pred
 
 
-AWS- Elastic Beanstalk:- 
+AWS- Elastic Beanstalk:- http://backorder-env.eba-kr5v6w2h.us-east-1.elasticbeanstalk.com/
 
 ![elastic beanstalk](https://i.imgur.com/VRg18nK.gif)
 
