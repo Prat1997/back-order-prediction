@@ -74,7 +74,7 @@ Our next step would be to follow the instruction given on
 Login or signup with free tier in order to create virtual amchine(Elastic beanstack) for free. 
 Note:- In free trier virtual Machine will only give free service for 720hr almost a month after that you will be charged , so use carefully. 
 I usally stop instance when it is not needed to avoid extra charge. so it may happen that deployment link for AWS might not work  
-[![](https://i.imgur.com/XMFtzYH.png)][![](https://i.imgur.com/cGvkZxw.png)](https://heroku.com)
+![](https://i.imgur.com/XMFtzYH.png)[![](https://i.imgur.com/cGvkZxw.png)](https://heroku.com)
 
 Our next step would be to follow the instruction given on 
 [AWS Elastic Beanstack](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html) to deploy a web app.
