@@ -119,13 +119,13 @@ Our next step would be to follow the instruction given on
 
 [Architecture](https://drive.google.com/file/d/1sp_UYlxHm4Y7CjXxX3dMEm6_S1iZLqOU/view)
 
-[Low Level Documentation](https://docs.google.com/document/d/1ORIG4IHpceO9YG3wtzAQdcDxXoJWObfZ/edit)
+[Low Level Documentation](https://drive.google.com/drive/u/0/folders/1J9HKopUWo1_INj3wkhjuHJILwDfOYj7C)
 
-[High Level Documentation](https://docs.google.com/document/d/16R9nCo4p-S7hCEaJ6o7n3QWazhJoao_w/edit)
+[High Level Documentation](https://drive.google.com/drive/u/0/folders/1J9HKopUWo1_INj3wkhjuHJILwDfOYj7C)
 
-[Wired Framed Diagram](https://docs.google.com/document/d/1Zm9KC9laURXK2PvRh1E-xkGDGwU54ykG/edit?usp=drivesdk&ouid=105319800090790459262&rtpof=true&sd=true)
+[Wired Framed Diagram](https://drive.google.com/drive/u/0/folders/1J9HKopUWo1_INj3wkhjuHJILwDfOYj7C)
 
-[DPR(Detail Documentation Report)](https://drive.google.com/file/d/174CdKcn_BNPgRClGy2V5FjrvcKF0hIAS/view?usp=drivesdk)
+[DPR(Detail Documentation Report)](https://drive.google.com/file/d/174CdKcn_BNPgRClGy2V5FjrvcKF0hIAS/view)
 
 
 ## Technologies Used
