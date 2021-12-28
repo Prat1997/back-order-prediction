@@ -119,11 +119,11 @@ Our next step would be to follow the instruction given on
 
 [Architecture](https://drive.google.com/file/d/1sp_UYlxHm4Y7CjXxX3dMEm6_S1iZLqOU/view)
 
-[Low Level Documentation](https://drive.google.com/drive/u/0/folders/1J9HKopUWo1_INj3wkhjuHJILwDfOYj7C)
+[Low Level Documentation](https://drive.google.com/file/d/1U3bhMU0iuImoyYHYrDKhZgDD-jZjIDPe/view)
 
-[High Level Documentation](https://drive.google.com/drive/u/0/folders/1J9HKopUWo1_INj3wkhjuHJILwDfOYj7C)
+[High Level Documentation](https://drive.google.com/file/d/1toWy7ZtylAZRn3oogrnbs-5XjZ0faNoS/view)
 
-[Wired Framed Diagram](https://drive.google.com/drive/u/0/folders/1J9HKopUWo1_INj3wkhjuHJILwDfOYj7C)
+[Wired Framed Diagram](https://drive.google.com/file/d/1yeH9xKe_6FZkwrdGG0fdJqesWSNoyrD4/view)
 
 [DPR(Detail Documentation Report)](https://drive.google.com/file/d/174CdKcn_BNPgRClGy2V5FjrvcKF0hIAS/view)
 
