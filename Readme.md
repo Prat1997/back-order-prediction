@@ -74,7 +74,7 @@ Our next step would be to follow the instruction given on
 Login or signup with free tier in order to create virtual amchine(Elastic beanstack) for free. 
 Note:- In free trier virtual Machine will only give free service for 720hr almost a month after that you will be charged , so use carefully. 
 I usally stop instance when it is not needed to avoid extra charge. so it may happen that deployment link for AWS might not work  
-[![](https://i.imgur.com/XMFtzYH.png) (https://i.imgur.com/cGvkZxw.png)](https://heroku.com)
+[![](https://i.imgur.com/XMFtzYH.png)][![](https://i.imgur.com/cGvkZxw.png)](https://heroku.com)
 
 Our next step would be to follow the instruction given on 
 [AWS Elastic Beanstack](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html) to deploy a web app.
@@ -135,7 +135,6 @@ Our next step would be to follow the instruction given on
 [<img target="_blank" src="https://flask.palletsprojects.com/en/1.1.x/_images/flask-logo.png" width=170>](https://flask.palletsprojects.com/en/1.1.x/) 
 [<img target="_blank" src="https://blog.vizuri.com/hs-fs/hub/342946/file-2231290146-png/Images/Logos/Partners/Amazon_Web_Services/aws_s3_logo.png" width=280>]()
 [<img target="_blank" src="https://i.imgur.com/3mZlVf8.jpg" width=280>]()
-[<img target="_blank" src="" width=200>]()
 [<img target="_blank" src="https://seeklogo.com/images/B/bootstrap-logo-69A1CCC10B-seeklogo.com.png" width=200>](https://getbootstrap.com/) 
 
 
