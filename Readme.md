@@ -58,7 +58,7 @@ To install the required packages and libraries, run this command in the project 
 pip install -r requirements.txt
 ```
 
-## Deployement
+## Deployment
 ### Heroku
 Login or signup in order to create virtual app. You can either connect your github profile or download ctl to manually deploy this project.
 [![](https://i.imgur.com/dKmlpqX.png)](https://heroku.com)
